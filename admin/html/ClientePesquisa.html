@@ -1,0 +1,65 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+	<!-- Main content -->
+	<section class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box box-info">
+					<div class="box-header">
+						<h3 class="box-title title">Emissão de Documentos</h3><br/>
+						<span class="text">Para a emissão de documentos basta pesquisar pelo cliente desejado e selecionar o documento em questão, confirmando a operação em “Emitir documento”.</span>
+					</div>					
+					<div class="box-body pad">
+						<div class="title-form">Selecione o cliente 1/2</div>
+						<form class="example form" action="">
+							<input type="text" id="pesquisar" placeholder="Pesquise pelo nome ou cpf do cliente" name="pesquisar">
+							<input type="hidden" id="result" >
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>						
+						<div id="citylist"></div>
+					</div>	
+					<div class="box-body pad">
+						<div class="title-form" style="margin: 0;">Selecione o documento a ser emitido 2/2</div>
+						<div class="text" style="text-align: center; margin-bottom: 20px;">Para abrir todos os documentos, dê permissão no navegador para habilitar esse sistema.</div>
+						<form class="example form" action="" >
+							<div id="ck-button">
+							   <label>
+								  <input type="checkbox" value="1" id="ficha_atendimento" disabled><span>Ficha de atendimento</span>
+							   </label>
+							</div>
+							<div id="ck-button">
+							   <label>
+								  <input type="checkbox" value="1" id="procuracao" disabled><span>Procuração</span>
+							   </label>
+							</div>
+							<div id="ck-button">
+							   <label>
+								  <input type="checkbox" value="1" id="declaracao_residencia" disabled><span>Declaracão de residência</span>
+							   </label>
+							</div>
+							<div id="ck-button">
+							   <label>
+								  <input type="checkbox" value="1" id="declaracao_hipo" disabled><span>Declaracão de hipossuficiência</span>
+							   </label>
+							</div>
+							<div id="ck-button">
+							   <label>
+								  <input type="checkbox" value="1" id="contrato_honorario" disabled><span>Contrato de honorário</span>
+							   </label>
+							</div>
+							<div class="send">
+								<button type="submit" class="enviar" style="width: 100%;">Emitir Documento</button>
+							</div>
+						</form>
+					</div>	
+					<!-- /.box-body -->
+				</div>
+				<!-- /.box -->
+			</div>
+			<!-- /.col-->
+		</div>
+		<!-- ./row -->
+	</section>
+	<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

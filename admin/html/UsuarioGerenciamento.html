@@ -1,0 +1,51 @@
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<!-- Main content -->
+				<section class="content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="box">
+								<div class="box-header">
+									<h3 class="box-title">Gerenciar Usuário</h3>
+								</div>
+								<!-- /.box-header -->								
+								<div class="box-body pad">
+									<form id="form" action="UsuarioGerenciamento.php" method="post" enctype="multipart/form-data">
+										<!-- text input -->
+										<div class="form-group">
+											<label>Nome</label>
+											<input type="text" class="form-control" name="UsuNome" value="{USU_NOME}" placeholder="Nome ...">
+										</div>
+										<div class="form-group">
+											<label>E-mail</label>
+											<input type="email" class="form-control" name="UsuEmail" value="{USU_EMAIL}" placeholder="E-mail ...">
+										</div>
+										<div class="form-group">
+											<label>Senha</label>
+											<input type="password" class="form-control" name="SenhaNova" value="" placeholder="Senha ...">
+										</div> 
+										<!-- BEGIN BLOCK_IMAGEM -->
+										<div class="form-group">										 
+											<label class="control-label">Imagem Utilizada</label>												
+											<pclass="btn btn-primary" ><img src="{USU_IMAGEM_CAMINHO}" class="img-circle"/></p>
+										</div>
+										<!-- END BLOCK_IMAGEM -->	
+										<div class="box-footer">
+											<button type="submit" class="btn btn-primary">{BOTAO}</button>
+										</div>
+										<input type="hidden" name="IdUsuario" value="{ID_USUARIO}"/>
+										<input type="hidden" name="ImagemAntiga" value="{USU_IMAGEM}">	
+										<input type="hidden" name="SenhaAntiga" value="{USU_SENHA}">	
+									</form>
+								</div>
+							</div>
+							<!-- /.box -->
+						</div>
+						<!-- /.col-->
+					</div>
+					<!-- ./row -->
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->

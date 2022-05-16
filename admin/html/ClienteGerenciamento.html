@@ -1,0 +1,419 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+	<!-- Main content -->
+	<section class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box box-info">
+					<div class="box-header">
+						<div style="width: 80%;float: left;">
+							<h3 class="box-title">Ficha de Cliente</h3>
+							<p>Para a emissão de documentos basta pesquisar pelo cliente desejado e selecionar.</p>
+						</div>
+						<!-- BEGIN BLOCK_DOCUMENTO_GERAL -->
+						<div class="left"><a  class="btn btn-primary right btn-doc" data-toggle="modal" data-target="#uploadModal"><i class="fa fa-file"></i> Documentos do cliente</a></div>
+						<!-- END BLOCK_DOCUMENTO_GERAL -->
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body pad">
+						<form id="form" action="ClienteGerenciamento.php" method="post" enctype="multipart/form-data" style="width: 90%;margin: 0 auto;">
+							<div class="box-header">
+								<h3 class="box-title title" style="text-align: center; display: block;">Informações ficha de atendimento de cliente</h3>
+							</div>
+							<div class="col-md-12" style="max-height:500px; overflow: auto;">
+								
+								<div class="form-group" style="padding: 10px 16px 0; ">
+									<label>Nome:</label>
+									<input {DISABLED} type="text" name="nome_completo" class="form-control" value="{FORM_NOME}" placeholder="Nome do Cliente...">
+								</div>
+								<div class="form-group" style=" float: left;padding: 10px 16px 0;width: 38%;margin-right: 1%;">
+									<label>RG:</label>
+									<input {DISABLED} type="text" class="form-control" name="rg" value="{FORM_RG}" id="rg" placeholder="RG"/>
+								</div>
+								<div class="form-group" style="float: left;padding: 10px 16px 0;width: 20%;margin-right: 1%;">
+									<label>Emissor:</label>
+									<input {DISABLED} type="text" class="form-control" name="emissor" value="{FORM_EMISSOR}" id="eissor" placeholder="Emissor"/>
+								</div>
+								<div class="form-group" style="float: left;padding: 10px 16px 0;width: 40%;">
+									<label>CPF:</label>
+									<input {DISABLED} type="text" class="form-control" name="cpf" value="{FORM_CPF}" id="cpf" placeholder="CPF"/>									
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 32%;margin-right: 1%;">									
+									<label>Estado civil:</label>
+									<input {DISABLED} type="text" name="estado_civil" class="form-control" value="{FORM_ESTADO_CIVIL}" placeholder="Estado Civil..">									
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 32%;margin-right: 1%;">
+									<label>Data de nascimento:</label>
+									<input {DISABLED} type="text" class="form-control" id="data_nascimento" name="data_nascimento" value="{FORM_DATA_NASCIMENTO}" placeholder="Data de nascimento..." >
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 34%;">
+									<label>Idade:</label>
+									<input {DISABLED} type="text" class="form-control" name="idade" value="{FORM_IDADE}" id="" placeholder="Idade"/>
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 39%;margin-right: 1%;">									
+									<label>Natural:</label>
+									<input {DISABLED} type="text" class="form-control" name="naturalidade" value="{FORM_NATURAL}" id="natural" placeholder="Natural">
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 60%;">
+									<label>Profissão:</label>
+									<input {DISABLED} type="text" class="form-control" name="profissao" value="{FORM_PROFISSAO}" id="" placeholder="Profissão"/>
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 79%;margin-right: 1%;">
+									<label>Endereço:</label>
+									<input {DISABLED} type="text" class="form-control" name="endereco" value="{FORM_ENDERECO}" id="natural" placeholder="Endereço">
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 40%;margin-right: 1%;">
+									<label>CEP:</label>
+									<input {DISABLED} type="text" class="form-control" name="cep" value="{FORM_CEP}" id="natural" placeholder="CEP">
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 20%;">									
+									<label>Número:</label>
+									<input {DISABLED} type="text" class="form-control" name="numero" value="{FORM_NUMERO}" id="natural" placeholder="Número">
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 39%;margin-right: 1%;">									
+									<label>Bairro:</label>
+									<input {DISABLED} type="text" class="form-control" name="bairro" value="{FORM_BAIRRO}" id="natural" placeholder="Bairro">
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 39%;margin-right: 1%;">									
+									<label>Cidade:</label>
+									<input {DISABLED} type="text" class="form-control" name="cidade" value="{FORM_CIDADE}"  placeholder="Cidade"/>
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 20%;">									
+									<label>Estado:</label>
+									<input {DISABLED} type="text" class="form-control" name="estado" value="{FORM_ESTADO}"  placeholder="Estado"/>
+								</div>								
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 49%;margin-right: 1%;">
+									<label>Telefone:</label>
+									<input {DISABLED} type="text" class="form-control" name="telefone" value="{FORM_TELEFONE}" id="" placeholder="Telefone"/>
+								</div>
+								<div class="form-group" style="float: left; padding: 10px 16px 0; width: 50%;">
+									<label>Telefone de recado:</label>
+									<input {DISABLED} type="text" class="form-control" name="telefone_recado" value="{FORM_TELEFONE_RECADO}" id="" placeholder="Telefone de recado"/>
+								</div>
+								<div class="col-md-12" style=" padding: 10px 0;">
+									<label>Serviço solicitado:</label>
+								</div>
+								<div  style=" float: left; width: 100%;padding: 10px 0;">
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="aposentadoria_urbana" name="checkboxvar[]" value="1" {CHECKED_1}/>
+											<label for="aposentadoria_urbana"></label>
+										</div> 
+									  <span>Aposentadoria urbana</span>
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="aposentadoria_rural" name="checkboxvar[]" value="2" {CHECKED_2}/>
+											<label for="aposentadoria_rural"></label>
+										</div>  
+										Aposentadoria rural
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="pensao" name="checkboxvar[]" value="3" {CHECKED_3}/>
+											<label for="pensao"></label>
+										</div>  
+										Pensão
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="auxilio_doenca" name="checkboxvar[]" value="4" {CHECKED_4}/>
+											<label for="auxilio_doenca"></label>
+										</div>  
+										Auxílio doença
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="bpc" name="checkboxvar[]" value="5" {CHECKED_5}/>
+											<label for="bpc"></label>
+										</div> 
+										BPC/LOAS
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="salario_maternidade" name="checkboxvar[]" value="6" {CHECKED_6}/>
+											<label for="salario_maternidade"></label>
+										</div>  
+										Salário maternidade
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="auxilio_acidente" name="checkboxvar[]" value="7" {CHECKED_7}/>
+											<label for="auxilio_acidente"></label>
+										</div> 
+										Auxílio acidente
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="auxilio_reclusao" name="checkboxvar[]" value="8" {CHECKED_8}/>
+											<label for="auxilio_reclusao"></label>
+										</div>  
+										Auxílio reclusão
+									</div>
+									<div style="width: 100%;padding: 10px 16px 0; border: 1px solid rgba(0, 0, 0, 0.20); border-radius: 20px; float: left;">
+										<label>Outros:</label>
+										<textarea {DISABLED} class="form-control" name="servico">{FORM_SERVICO}</textarea>
+									</div>
+								</div>
+								<div class="col-md-12" style=" padding: 10px 0;">
+									<label>Documentos apresentados:</label>
+								</div>
+								<div  style=" float: left; width: 100%;padding: 10px 0;">
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="rg_doc" name="checkboxvar[]" value="9" {CHECKED_9}/>
+											<label for="rg_doc"></label>
+										</div>  
+										RG
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="cpf_doc" name="checkboxvar[]" value="10" {CHECKED_10}/>
+											<label for="cpf_doc"></label>
+										</div>  
+										CPF
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="ctps" name="checkboxvar[]" value="11" {CHECKED_11}/>
+											<label for="ctps"></label>
+										</div> 
+										CTPS
+									</div> 
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="comprovante_residencia" name="checkboxvar[]" value="12" {CHECKED_12}/>
+											<label for="comprovante_residencia"></label>
+										</div> 
+										Comprovante de residência
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="cert_nasc" name="checkboxvar[]" value="13" {CHECKED_13}/>
+											<label for="cert_nasc"></label>
+										</div>  
+										Certidão de nascimento
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="cert_nasc_filho" name="checkboxvar[]" value="14" {CHECKED_14}/>
+											<label for="cert_nasc_filho"></label>
+										</div>  
+										Certidão de nascimento do(s) filho(s)
+									</div> 
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="cert_cas" name="checkboxvar[]" value="15" {CHECKED_15}/>
+											<label for="cert_cas"></label>
+										</div>  
+										Certidão de casamento
+									</div> 
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="cert_bat" name="checkboxvar[]" value="16" {CHECKED_16}/>
+											<label for="cert_bat"></label>
+										</div> 
+										Certidão de batismo
+									</div> 
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="comprovante_renda" name="checkboxvar[]" value="17" {CHECKED_17}/>
+											<label for="comprovante_renda"></label>
+										</div>  
+										Comprovante de renda
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="comprovante_prop_rural" name="checkboxvar[]" value="18" {CHECKED_18}/>
+											<label for="comprovante_prop_rural"></label>
+										</div>  
+										Comprovante da propriedade rural (descrição)
+									</div> 
+									<div style="width: 100%;padding: 10px 16px 0; margin-bottom: 10px; border: 1px solid rgba(0, 0, 0, 0.20); border-radius: 20px; float: left;">
+										<label>Outros:</label>
+										<textarea {DISABLED} class="form-control" name="comprovante_prop_rural">{FORM_PROP_RURAL}</textarea>
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="declaracao_sindicato" name="checkboxvar[]" value="19" {CHECKED_19}/>
+											<label for="declaracao_sindicato"></label>
+										</div>  
+										Declaração sindicato
+									</div> 																	
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="declaracao_associacao_produtora" name="checkboxvar[]" value="20" {CHECKED_20}/>
+											<label for="declaracao_associacao_produtora"></label>
+										</div>  
+										Declaração de associação produtora
+									</div> 
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="comprovante_compra_venda_producao_agricola" name="checkboxvar[]" value="21" {CHECKED_21}/>
+											<label for="comprovante_compra_venda_producao_agricola"></label>
+										</div>  
+										Comprovante de compra e venda de produção agrícola
+									</div>		
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="ata_reuniao" name="checkboxvar[]" value="22" {CHECKED_22}/>
+											<label for="ata_reuniao"></label>
+										</div>  
+										Ata de reunião
+									</div>		
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="contratos_diversos" name="checkboxvar[]" value="23" {CHECKED_23}/>
+											<label for="contratos_diversos"></label>
+										</div>  
+										 Contratos diversos
+									</div>		
+									<div style="width: 100%;padding: 10px 16px 0;margin-bottom: 10px; border: 1px solid rgba(0, 0, 0, 0.20); border-radius: 20px; float: left; margin-bottom: 10px;">
+										<label>Testemunhas:</label>
+										<textarea {DISABLED} class="form-control" name="testemunhas">{FORM_TEST}</textarea>
+									</div>
+									<div style="width: 100%;padding: 10px 16px 0; margin-bottom: 10px;border: 1px solid rgba(0, 0, 0, 0.20); border-radius: 20px; float: left;">
+										<label>Outros:</label>
+										<textarea {DISABLED} class="form-control" name="testemunha_outro">{FORM_OUTROS_TEST}</textarea>
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="laudos_medicos" name="checkboxvar[]" value="24" {CHECKED_24}/>
+											<label for="laudos_medicos"></label>
+										</div>  
+										 Laudos médicos
+									</div>	
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="exames" name="checkboxvar[]" value="25" {CHECKED_25}/>
+											<label for="exames"></label>
+										</div>  
+										 Exames
+									</div>	
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="comunicado_decisao_administrativa_inss" name="checkboxvar[]" value="26" {CHECKED_26}/>
+											<label for="comunicado_decisao_administrativa_inss"></label>
+										</div>  
+										 Comunicado de decisão administrativa INSS
+									</div>	
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="resultado_pericia" name="checkboxvar[]" value="27" {CHECKED_27}/>
+											<label for="resultado_pericia"></label>
+										</div>  
+										 Resultado perícia 
+									</div>
+									<div class="box-doc">
+										<div class="round">
+											<input {DISABLED} type="checkbox" id="comprovante_prisao" name="checkboxvar[]" value="28" {CHECKED_28}/>
+											<label for="comprovante_prisao"></label>
+										</div>  
+										 Comprovante de prisão
+									</div>
+									<div style="width: 100%;padding: 10px 16px 0; border: 1px solid rgba(0, 0, 0, 0.20); border-radius: 20px; float: left;">
+										<label>Outros:</label>
+										<textarea {DISABLED} class="form-control" name="comprovante_prisao_outro">{FORM_OUTROS_PRISAO}</textarea>
+									</div>
+								</div>
+								<div class="col-md-12" style=" padding: 10px 0;">
+									<label>Documentos faltantes:</label>
+								</div>
+								<div style="width: 100%;padding: 10px 16px 0; margin-bottom: 10px;border: 1px solid rgba(0, 0, 0, 0.20); border-radius: 20px; float: left; margin-bottom: 10px;">
+									<label>Documentos requeridos faltantes</label>
+									<textarea {DISABLED} class="form-control" name="doc_faltante">{FORM_DOC_FALTANTE}</textarea>
+								</div>
+								<div class="form-group" style=" float: left; margin-bottom: 10px;width: 100%;padding: 10px 16px 0;">
+									<label>Observações:</label>
+									<textarea {DISABLED} class="form-control" name="observacao" >{FORM_OBS}</textarea>
+								</div>
+								<div id="file_div">
+										
+								</div>
+								<div class="" >								
+									<div class="round">
+										 <input type="button" onclick="add_file();" class="btn btn-primary btn-doc enviar" value="Adicionar arquivo">											
+									</div> 									
+								</div>
+							</div>		
+							<div class="col-md-12 rodape-buttom">
+								<div class="" style="padding: 10px 9px 0;">
+									<div class="box-footer">
+										<div style="margin-bottom: 10px;">
+											<!-- BEGIN BLOCK_FORM_EXCLUIR -->
+											<span><a href="?id={FORM_ID}&editar=true" class="btn btn-primary btn-doc btn-doc-editar">Editar ficha do cliente</a></spanA>
+											
+											<span><a {DISABLED}  class="btn btn-primary right btn-excluir"><i class="fa fa-trash"></i> Excluir cliente</a></span>
+											<!-- END BLOCK_FORM_EXCLUIR -->
+										</div>
+										<button {DISABLED} type="submit" class="btn btn-primary btn-doc enviar">Salvar Alterações</button>
+										<a href="ClientePesquisa.php" class="btn btn-primary btn-cancelar">Cancelar</a>
+									</div>
+								</div>							
+								<input {DISABLED} type="hidden" name="id" value="{FORM_ID}" />	
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- /.box -->
+			</div>
+			<!-- /.col-->
+		</div>
+		<!-- ./row -->
+	</section>
+	<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+<!-- Modal -->
+        <div id="uploadModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Documentos do cliente</h4>
+					<p style="text-align: center;">Clique no documento para visualizar</p>
+					<div class="documento-upload">
+						<!-- BEGIN BLOCK_DOCUMENTO -->
+							<div style="margin-bottom: 10px;  float: left; padding: 10px; margin-right: 10px;" id="doc-{DOC_ID}" class="btn-cancelar"><a  href="{DOC_ARQUIVO}" style="padding: 10px; color: gray;" target="_blank">{DOC_NOME}</a>
+							<a href="javascript: void(0);" onclick="delDoc({DOC_ID})"><i class="fa fa-close" style="color: gray; border: 2px solid rgba(0, 0, 0, 0.20);border-radius: 100%;padding: 5px; height: 25px; width: 25px;"></i></a></div>
+						<!-- END BLOCK_DOCUMENTO -->
+					</div>
+                </div>
+                <div class="modal-body">
+                    <!-- Form -->
+                    <form method='post' action='' id="form-doc" class="form" enctype="multipart/form-data">
+						<h4 class="modal-title">Upload de novo documento</h4>
+						<div class="message-envio">Arquivo cadastrado com sucesso!</div>
+                       <div class="file-input">
+						  <input  type="file" name="file-input" id="file-input"	class="file-input__input" accept="image/jpeg,image/png,application/pdf"/>
+						  <label class="file-input__label" for="file-input">							
+							<span>Selecionar documento</span></label>
+						</div>						
+						<div class="form-group" style="/* float: left; *//* padding: 10px 16px 0; */width: 39%;margin: 0 auto;">									
+							<label class="active">Insirá o nome do documento:</label>
+							<input  type="text" class="form-control" name="nome_arquivo" value="" id="nome_arquivo" placeholder="Nome do Arquivo">
+						</div>
+						<div class="btn-salvar doc-upload"><button type="submit" id='btn_upload' class="btn btn-primary btn-doc" >Salvar</button></div>
+						<div class="btn-salvar"><button id='btn_upload_carregar' class="btn btn-primary btn-doc" ><div id="orderLoading"></div></button></div>
+                    </form>
+                </div>
+                
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Script -->
+		<div class="cd-popup" role="alert">
+			<div class="cd-popup-container">
+				<p>Deseja deletar esse cliente?</p>
+				<ul class="cd-buttons">
+					<li><a href="ClientePesquisa.php?id={FORM_ID}&deletar=true">Sim</a></li>
+					<li><a href="#0">Não</a></li>
+				</ul>
+				<a href="#0" class="cd-popup-close img-replace"></a>
+			</div> <!-- cd-popup-container -->
+		</div> 
+        

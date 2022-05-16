@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>{SYS_NOME}</title>
+		<link rel="shortcut icon" type="image/ico" href="../images/favicon.ico" />
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- Bootstrap 3.3.6 -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<!-- Font Awesome -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Font Google Ubunto -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+		<!-- Ionicons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+		
+		<!-- Theme style -->
+		<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+		<!-- AdminLTE Skins. Choose a skin from the css/skins
+			folder instead of downloading all of them to reduce the load. -->
+		<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+		<!-- iCheck -->
+		<link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
+		<!-- Morris chart -->
+		<link rel="stylesheet" href="plugins/morris/morris.css">
+		<!-- jvectormap -->
+		<link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+		<link rel="stylesheet" href="assets/css/input-file.css">
+		<!-- Date Picker -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-clockpicker.min.css">
+		<!-- Daterange picker -->
+		<link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
+		<!-- bootstrap wysihtml5 - text editor -->
+		<link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+		<script src="//cdn.ckeditor.com/4.6.1/full/ckeditor.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<!-- Style Imput -->
+		<link rel="stylesheet" href="dist/css/style-input.css">
+		<link rel="stylesheet" href="dist/css/lightbox.css">
+		<link rel="stylesheet" href="dist/css/app.css">
+		<link rel="stylesheet" href="dist/css/estilo.css">
+		<!-- Compiled and minified CSS -->
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body class="hold-transition skin-blue sidebar-mini">
+		<div class="wrapper">
+			<header class="main-header">
+				<!-- Logo -->
+				<a href="home.php" class="logo" style="background-color: #3E4095;">
+					<!-- mini logo for sidebar mini 50x50 pixels -->
+					<span class="logo-mini"><b>DP</b>OK</span>
+					<!-- logo for regular state and mobile devices -->
+					<span class="logo-lg"><b>Admin</b> UNIPREV</span>
+				</a>
+				<!-- Header Navbar: style can be found in header.less -->
+				<nav class="navbar navbar-static-top">
+					<!-- Sidebar toggle button-->
+					<!-- <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> -->
+					<!-- <span class="sr-only">Toggle navigation</span> -->
+					</a>
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<!-- User Account: style can be found in dropdown.less -->
+							<li class="dropdown user user-menu">
+								
+								<ul class="dropdown-menu">
+									<!-- User image -->
+									<!-- <li class="user-header">
+										<img src="{USU_CAMINHO_IMAGEM}" class="img-circle" alt="User Image">
+									</li> -->
+									<!-- Menu Footer-->
+									<li class="user-footer">
+										<div class="pull-left">
+											<a href="UsuarioGerenciamento.php?id={ID_USUARIO}" class="btn btn-default btn-flat">Profile</a>
+										</div>
+										<div class="pull-right">
+											<a href="Logout.php" class="btn btn-default btn-flat">Sair</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<!-- Left side column. contains the logo and sidebar -->
+			<aside class="main-sidebar">
+				<!-- sidebar: style can be found in sidebar.less -->
+				<section class="sidebar">
+					<!-- Sidebar user panel -->
+					<div class="user-panel">
+						<div class="pull-left image">
+							<!-- <img src="{USU_CAMINHO_IMAGEM}" class="img-circle" alt="User Image"> -->
+						</div>
+						<div class="pull-left info">
+							<p>Usuário:</p>
+							<p>{NOME_USUARIO}</p>
+							
+						</div>
+					</div>
+					<!-- search form 
+					<form action="#" method="get" class="sidebar-form">
+						<div class="input-group">
+							<input type="text" name="q" class="form-control" placeholder="Search...">
+							<span class="input-group-btn">
+							<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+							</button>
+							</span>
+						</div>
+					</form>
+					<!-- /.search form -->
+					<!-- sidebar menu: : style can be found in sidebar.less -->
+					<ul class="sidebar-menu" style="text-transform: uppercase;">
+						<li class="header"></li>
+						
+							<!-- BEGIN BLOCK_ADMINISTRACAO_SITE -->
+																				
+						</li>	
+						<!-- END BLOCK_ADMINISTRACAO_SITE -->
+						<li class="treeview">
+							<!-- <a href="#">
+							<i class="fa fa-home"></i> <span>Documentos</span> <i class="fa fa-angle-left pull-right"></i>
+							</a> -->
+							<li class="treeview {ACTIVE_CLIENTE}">
+							<a href="ClienteGerenciamento.php">
+								<i class="fa fa-wpforms"></i><span>FORMULÁRIO DE ATENDIMENTO</span></i>
+							</a>
+						</li>
+						
+						<li class="treeview {ACTIVE_CLIENTE_PESQUISA}">
+							<a href="ClientePesquisa.php">
+								<i class="fa fa-print"></i><span>EMISSÃO DE DOCUMENTOS</span></i>
+							</a>
+						</li>
+						
+						<li class="treeview {ACTIVE_CLIENTE_GERENCIAR}">
+							<a href="GerenciarCliente.php">
+								<i class="fa fa-user"></i><span>GERENCIAMENTO DE CLIENTES</span></i>
+							</a>
+						</li>
+							
+							<hr class="hrColor">
+							
+							<ul class="treeview-menu">	
+								<li>
+									
+									<!-- BEGIN BLOCK_ADMINISTRACAO_DIPLOMA -->
+									<a href="AlunoDocumentoPesquisa.php">
+										<i class="fa fa-circle-o"></i><span>Documento de Aluno</span></i>
+									</a>
+									<!-- END BLOCK_ADMINISTRACAO_DIPLOMA -->
+								</li>	
+								<!-- BEGIN BLOCK_ADMINISTRACAO_FACULDADE -->
+								<li>
+									<a href="#">
+									<i class="fa fa-building"></i> <span>Faculdade</span> <i class="fa fa-angle-left pull-right"></i>
+									</a>
+									<ul class="treeview-menu">	
+										<li>
+											<a href="FaculdadePesquisa.php">
+												<i class="fa fa-circle-o"></i><span>Cadastrar Faculdade</span></i>
+											</a>
+										</li>		
+										<li>
+											<a href="CursoPesquisa.php">
+												<i class="fa fa-circle-o"></i><span>Cadastrar Curso</span></i>
+											</a>
+										</li>			
+									</ul>
+								</li>	
+								<!-- END BLOCK_ADMINISTRACAO_FACULDADE -->
+							</ul>
+						</li>
+						<!-- BEGIN BLOCK_ADMINISTRACAO_MKT -->
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-bullhorn"></i> <span>Marketing Digital</span> <i class="fa fa-angle-left pull-right"></i>
+							</a>
+							<ul class="treeview-menu">	
+								<li><a href="SeoListar.php"><i class="fa fa-circle-o"></i>Seo</a></li>		
+							</ul>
+						</li>
+						<!-- END BLOCK_ADMINISTRACAO_MKT -->
+						<!-- BEGIN BLOCK_ADMINISTRACAO_CONFIGURACAO -->
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-wrench"></i> <span>Configuração</span> <i class="fa fa-angle-left pull-right"></i>
+							</a>
+							<ul class="treeview-menu">		
+								
+								<li><a href="ConfiguracaoListar.php"><i class="fa fa-circle-o"></i>E-mail</a></li>
+								
+								<!-- <li><a href="DadosEmpresaListar.php"><i class="fa fa-circle-o"></i>Dados da Empresa</a></li> -->
+								
+							</ul>
+						</li>	
+						<!-- END BLOCK_ADMINISTRACAO_CONFIGURACAO -->
+						<li class="treeview {ACTIVE_CLIENTE_CONF}"><a href="UsuarioListar.php"><i class="fa fa-cog"></i>Configuração do Sistema</a></li>
+						<li class="treeview">
+							<a href="Logout.php"><i class="fa fa-sign-out"></i><span>Sair</span></a>
+						</li>
+					</ul>
+				</section>
+				<!-- /.sidebar -->
+			</aside>

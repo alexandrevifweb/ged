@@ -1,0 +1,57 @@
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">				
+				<!-- Main content -->
+				<section class="content">					
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="box">
+								<div class="box-header">
+									<h3 class="box-title">Gerecniar Usuário</h3>
+								</div>
+								<!-- /.box-header -->
+								<!-- BEGIN BLOCK_SUCESS -->
+									<div class="alert alert-success">
+										<strong>Usuário deletado com Sucesso!</strong>
+									</div>
+								<!-- END BLOCK_SUCESS-->	
+								<!-- BEGIN BLOCK_SUCESS_EDITAR -->
+									<div class="alert alert-success">
+										<strong>Usuário editado com Sucesso!</strong>
+									</div>
+								<!-- END BLOCK_SUCESS_EDITAR-->		
+								<!-- BEGIN BLOCK_SUCESS_ADICIONAR -->
+									<div class="alert alert-success">
+										<strong>Usuário adicionado com Sucesso!</strong>
+									</div>
+								<!-- END BLOCK_SUCESS_ADICIONAR -->				
+								<div class="box-header">
+									<a href="UsuarioGerenciamento.php"class="btn btn-primary" >Adicionar Usuário</a>
+								</div>
+								<div class="box-body table-responsive no-padding">
+									<table class="table table-hover">
+										<tr>
+											<th>ID</th>
+											<th>Título</th>
+											<th>Editar</th>
+											<th>Deletar</th>
+										</tr>
+										<!-- BEGIN BLOCK_USUARIO -->
+											<tr>
+												<td>{ID_USUARIO}</td>
+												<td>{USU_NOME}</td>
+												<td><a href="UsuarioGerenciamento.php?id={ID_USUARIO}"class="btn btn-primary" ><i class="fa fa-edit"></i></a></td>
+												<td><a href="UsuarioListar.php?acao=deletar&id={ID_USUARIO}"class="btn btn-primary" ><i class="fa fa-remove"></i></a></td>
+											</tr>
+										<!-- END BLOCK_USUARIO -->
+									</table>
+								</div>
+								<!-- /.box-body -->
+							</div>
+							<!-- /.box -->
+						</div>
+					</div>
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->

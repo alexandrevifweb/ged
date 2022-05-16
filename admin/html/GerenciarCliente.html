@@ -1,0 +1,47 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+	<!-- Main content -->
+	<section class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box box-info">
+					<div class="box-header">
+						<h3 class="box-title title">Gerenciamento de Clientes</h3><br/>
+						<!-- <span class="text">Para a emissão de documentos basta pesquisar pelo cliente desejado e selecionar o documento em questão, confirmando a operação em “Emitir documento”.</span> -->
+					</div>					
+					<div class="box-body pad">
+						<div class="title-form">Selecione o cliente 1/2</div>
+						<form class="example form" action="">
+							<input type="text" id="pesquisarCliente" placeholder="Pesquise pelo nome do cliente" name="pesquisar">
+							<input type="hidden" id="result" >
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>						
+						<div id="citylist"></div>
+					</div>	
+					<!-- /.box-body -->
+					<div class="box-body table-responsive no-padding">
+						
+						
+						<table class="table table-hover">
+							<tr>
+								<th>ID</th>
+								<th>Nome</th>
+							</tr>
+							<!-- BEGIN BLOCK_CLIENTE -->
+								<tr>
+									<td>{ALUNO_ID}</td>
+									<td><a href="ClienteGerenciamento.php?id={ALUNO_ID}" >{ALUNO_NOME}</a></td>
+								</tr>
+							<!-- END BLOCK_CLIENTE -->
+						</table>
+					</div>
+				</div>
+				<!-- /.box -->
+			</div>
+			<!-- /.col-->
+		</div>
+		<!-- ./row -->
+	</section>
+	<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
